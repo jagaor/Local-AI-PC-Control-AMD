@@ -27,6 +27,18 @@ Está optimizado específicamente para GPUs **AMD Radeon (Serie RX 6000/7000)**,
 
 ---
 
+
+## 🛡️ Casos de Uso para Ciberseguridad & Sec-Devs
+
+Este entorno permite a profesionales de seguridad realizar tareas críticas sin comprometer la confidencialidad de los datos:
+
+- **Auditoría de Logs Local:** Analiza archivos `.log` masivos buscando patrones de intrusión o anomalías sin exponer datos sensibles a nubes públicas.
+- **Revisión de Código Privada:** Escanea scripts, archivos de configuración y binarios en busca de vulnerabilidades o *hardcoded credentials* antes de subirlos a producción.
+- **Bastionado de Sistemas (Hardening):** Automatiza el cierre de puertos, revisión de permisos de usuario y auditoría de cuentas activas mediante lenguaje natural.
+- **Análisis de Malware en Entornos Aislados:** Utiliza la capacidad de razonamiento del modelo para descifrar fragmentos de código ofuscado o entender el comportamiento de scripts maliciosos sin necesidad de conexión a internet.
+
+---
+
 ## 🔧 Solución Técnica para AMD en Windows
 
 Para evitar que Ollama ignore la GPU y sature el procesador (CPU), este proyecto inyecta variables de entorno que fuerzan el uso de la API Vulkan. Esto es crítico para tarjetas de la serie 6000:
